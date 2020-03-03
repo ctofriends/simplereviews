@@ -1,4 +1,4 @@
-# Destinatarioausente
+# SimpleReviews
 
 To start your Phoenix server:
 

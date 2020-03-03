@@ -1,5 +1,5 @@
-defmodule DestinatarioausenteWeb.ErrorView do
-  use DestinatarioausenteWeb, :view
+defmodule SimpleReviewsWeb.ErrorView do
+  use SimpleReviewsWeb, :view
 
   # If you want to customize a particular status code
   # for a certain format, you may uncomment below.

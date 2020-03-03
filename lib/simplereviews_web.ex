@@ -1,12 +1,12 @@
-defmodule DestinatarioausenteWeb do
+defmodule SimpleReviewsWeb do
   @moduledoc """
   The entrypoint for defining your web interface, such
   as controllers, views, channels and so on.
 
   This can be used in your application as:
 
-      use DestinatarioausenteWeb, :controller
-      use DestinatarioausenteWeb, :view
+      use SimpleReviewsWeb, :controller
+      use SimpleReviewsWeb, :view
 
   The definitions below will be executed for every view,
   controller, etc, so keep them short and clean, focused
@@ -19,19 +19,19 @@ defmodule DestinatarioausenteWeb do
 
   def controller do
     quote do
-      use Phoenix.Controller, namespace: DestinatarioausenteWeb
+      use Phoenix.Controller, namespace: SimpleReviewsWeb
 
       import Plug.Conn
-      import DestinatarioausenteWeb.Gettext
-      alias DestinatarioausenteWeb.Router.Helpers, as: Routes
+      import SimpleReviewsWeb.Gettext
+      alias SimpleReviewsWeb.Router.Helpers, as: Routes
     end
   end
 
   def view do
     quote do
       use Phoenix.View,
-        root: "lib/destinatarioausente_web/templates",
-        namespace: DestinatarioausenteWeb
+        root: "lib/simplereviews_web/templates",
+        namespace: SimpleReviewsWeb
 
       # Import convenience functions from controllers
       import Phoenix.Controller, only: [get_flash: 1, get_flash: 2, view_module: 1]
@@ -39,11 +39,11 @@ defmodule DestinatarioausenteWeb do
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
 
-      import DestinatarioausenteWeb.ErrorHelpers
-      import DestinatarioausenteWeb.Gettext
+      import SimpleReviewsWeb.ErrorHelpers
+      import SimpleReviewsWeb.Gettext
       import Phoenix.LiveView, only: [live_render: 2, live_render: 3]
 
-      alias DestinatarioausenteWeb.Router.Helpers, as: Routes
+      alias SimpleReviewsWeb.Router.Helpers, as: Routes
     end
   end
 
@@ -59,7 +59,7 @@ defmodule DestinatarioausenteWeb do
   def channel do
     quote do
       use Phoenix.Channel
-      import DestinatarioausenteWeb.Gettext
+      import SimpleReviewsWeb.Gettext
     end
   end
 

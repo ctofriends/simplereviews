@@ -1,8 +1,8 @@
-defmodule DestinatarioausenteWeb.HelloLive do
+defmodule SimpleReviewsWeb.HelloLive do
   use Phoenix.LiveView
 
   def render(assigns) do
-    DestinatarioausenteWeb.HelloView.render("hello.html", assigns)
+    SimpleReviewsWeb.HelloView.render("hello.html", assigns)
   end
 
   def mount(_session, socket) do

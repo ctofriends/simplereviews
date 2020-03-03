@@ -7,16 +7,16 @@
 # General application configuration
 use Mix.Config
 
-config :destinatarioausente,
-  ecto_repos: [Destinatarioausente.Repo]
+config :simplereviews,
+  ecto_repos: [SimpleReviews.Repo]
 
 # Configures the endpoint
-config :destinatarioausente, DestinatarioausenteWeb.Endpoint,
+config :simplereviews, SimpleReviewsWeb.Endpoint,
   url: [host: "localhost"],
   live_view: [signing_salt: "gKTla7rkzYj4yJa6EMNdOJWlPc/upgAv6uMbprZ5n28yiieuap0DAJM/11ftmrlh"],
   secret_key_base: "Ub6Y8rLdxDOvyBQ/IdbpqbpxduZgJuI0T3FWraorx5T3m9d9qsp4gnB3jcJvSjtX",
-  render_errors: [view: DestinatarioausenteWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: Destinatarioausente.PubSub, adapter: Phoenix.PubSub.PG2]
+  render_errors: [view: SimpleReviewsWeb.ErrorView, accepts: ~w(html json)],
+  pubsub: [name: SimpleReviews.PubSub, adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger
 config :logger, :console,

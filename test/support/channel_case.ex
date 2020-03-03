@@ -1,4 +1,4 @@
-defmodule DestinatarioausenteWeb.ChannelCase do
+defmodule SimpleReviewsWeb.ChannelCase do
   @moduledoc """
   This module defines the test case to be used by
   channel tests.
@@ -21,15 +21,15 @@ defmodule DestinatarioausenteWeb.ChannelCase do
       use Phoenix.ChannelTest
 
       # The default endpoint for testing
-      @endpoint DestinatarioausenteWeb.Endpoint
+      @endpoint SimpleReviewsWeb.Endpoint
     end
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Destinatarioausente.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(SimpleReviews.Repo)
 
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(Destinatarioausente.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(SimpleReviews.Repo, {:shared, self()})
     end
 
     :ok
