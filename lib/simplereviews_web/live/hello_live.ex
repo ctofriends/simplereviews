@@ -1,14 +1,8 @@
-defmodule SimpleReviewsWeb.HelloView do
+defmodule SimpleReviewsWeb.HelloLive do
   use Phoenix.LiveView
 
   def render(assigns) do
-    ~L"""
-    <div class="">
-      <div>
-        <%= @hello %>
-      </div>
-    </div>
-    """
+    SimpleReviewsWeb.HelloView.render("index.html", assigns)
   end
 
   def mount(_session, socket) do

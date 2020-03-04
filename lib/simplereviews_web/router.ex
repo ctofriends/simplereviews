@@ -17,7 +17,7 @@ defmodule SimpleReviewsWeb.Router do
   scope "/", SimpleReviewsWeb do
     pipe_through(:browser)
 
-    get("/", PageController, :index)
+    live("/", HelloLive)
   end
 
   # Other scopes may use custom stacks.
